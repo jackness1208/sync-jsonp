@@ -1,6 +1,6 @@
 {
   "name": "sync-jsonp",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "sync jsonp for web",
   "main": "output/sync-jsonp.js",
   "types": "output/sync-jsonp.d.ts",
