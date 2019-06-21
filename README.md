@@ -23,4 +23,24 @@ import syncJsonp from 'sync-jsonp'
   - `name` (`String`) name of the global callback functions that
     handle jsonp responses (defaults to `prefix` + incremented counter)
 
+## example
+```javascript
+import syncJsonp from 'sync-jsonp';
+
+syncJsonp('http://hostname.com/path/to/api').then((data) => {
+  console.log(data);
+});
+
+syncJsonp('http://hostname.com/path/to/api', {
+  t: +new Date()
+}).then((data) => {
+  console.log(data);
+});
+
+syncJsonp('http://hostname.com/path/to/api', undefined, {
+  timeout: 2000
+}).then((data) => {
+  console.log(data);
+});
+```
 
